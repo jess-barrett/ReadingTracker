@@ -1,5 +1,6 @@
 import React from "react";
 import library from "../assets/images/library3.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -14,9 +15,9 @@ const Hero = () => {
                 alt="Library"
               />
               <div className="flex items-center justify-center mr-12 mt-6 col-start-9 col-span-2 row-start-1 row-end-5 opacity-0 hover:opacity-100">
-                <button className="bg-orange-500 hover:bg-orange-400 text-white text-2xl font-bold text-center px-4 py-2 rounded-md">
+                <Link to='/MyShelf' className="bg-orange-500 hover:bg-orange-400 text-white text-2xl font-bold text-center px-4 py-2 rounded-md">
                   My Shelf
-                </button>
+                </Link>
               </div>
             </div>
           </div>
